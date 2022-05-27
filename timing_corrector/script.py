@@ -122,7 +122,7 @@ if __name__ == '__main__':
 
     args, _ = parser.parse_known_args()
 
-    vowels = open('vowels.txt', encoding='utf8').read().split(',')
+    vowels = open('vowels.txt', encoding='utf8').read().strip().split(',')
     #print(vowels)
 
     score_list, timing_list = parse_labels(args.mono_score, args.mono_timing)
