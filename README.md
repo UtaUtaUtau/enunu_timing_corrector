@@ -21,3 +21,5 @@ This was only a quick test run of timing correction for ENUNU. There might be a 
 That being said, I also think it's generally better to use canon's timing corrector for Japanese voices instead of this. This was made to hopefully support all languages.
 
 **UPDATE 05/28:** OpenUtau partially deals with this issue mentioned by making the previous phonemes very small length. If the long length phoneme is retracted to a reasonable size, it returns the other pushed phonemes to its likely configuration. Hoping that stays the way it is. A preview of this exact case can be seen [here](https://twitter.com/C5G4D4A3/status/1530539822766780417?s=20&t=KFEn7_F0c6AQcEsUjA21Rg)
+
+**UPDATE 07/22:** The timing correction now handles multiple vowels in a note better than the previous version. It also removes negative duration phonemes, though rather lazily. It only makes these phonemes go for one millisecond.
